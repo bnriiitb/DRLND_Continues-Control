@@ -9,7 +9,7 @@
 
 ### Introduction
 
-In this project this project I have used the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment to train an agent.
+In this project I have used the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment to train an agent.
 
 ![Trained Agent][image1]
 
