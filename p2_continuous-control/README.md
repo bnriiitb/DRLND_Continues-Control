@@ -53,5 +53,5 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 The file [Report.md](Report.md) contains the strategies and the methodologies followed to train the agent.  
 
-The agent was able to solve the environment in __268 episodes__
+The agent was able to solve the environment in __226 episodes__
 Please refer to [checkpoint_solved.pth](checkpoint_solved.pth) file for finding the saved weights.

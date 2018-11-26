@@ -17,8 +17,9 @@ This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to
 
 The network comprises of 2 networks:
 
-Actor: 256 -> 256
-Critic: 256 -> 256 -> 128
+* Actor: 256 -> 256
+
+* Critic: 256 -> 256 -> 128
 
 Hyperparameters:
 
@@ -34,7 +35,7 @@ I've trained the network using DDPG algorithm with the state vector of size 33 a
 
 ## Results 
 
-The agents were able to solve task in 216 episodes with a final average score of 58.76 after 300 episodes.
+The agents were able to solve task in 216 episodes with a final average score of 55.69 after 300 episodes.
 ![chart](chart.png)
 
 
