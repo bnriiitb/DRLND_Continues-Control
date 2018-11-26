@@ -5,6 +5,9 @@ This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to
 [ddpg-paper]: https://arxiv.org/pdf/1509.02971.pdf
 [ddpg-repo]: https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/DDPG.ipynb
 
+Deep DPG (DDPG) is a model-free approach which can learn competitive policies for all of our tasks using low-dimensional observations. In many cases, we are also able to learn good policies directly from pixels
+A key feature of the approach is its simplicity: it requires only a straightforward actor-critic architecture and learning algorithm with very few “moving parts”, making it easy to implement and scale to more difficult problems and larger networks. DDPG can sometimes find policies that exceed the performance of the planner, in some cases even when learning from pixels (the planner always plans over the underlying low-dimensional state space).
+
 ## Implementation 
 
 I have trained the network using DDPG algorithm. 
