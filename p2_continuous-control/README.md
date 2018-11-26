@@ -42,7 +42,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
         - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
         - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
 
-2. Please make sure you have Python 3.6+ installed on your machine and to install the other dependencies that are quired to run this project. Please run the below command from p1_navigation folder.
+2. Please make sure you have Python 3.6+ installed on your machine and to install the other dependencies that are quired to run this project. Please run the below command from p2_continuous-control folder.
 
 	conda install --yes --file requirements.txt
 
