@@ -20,7 +20,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ### Distributed Training
 
-In this project, I usee the Unity environment that contains 20 identical agents, each with its own copy of the environment.  
+In this project, I've used the Unity environment that contains 20 identical agents, each with its own copy of the environment.  
 
 This environment is useful for algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), and [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.  
 
