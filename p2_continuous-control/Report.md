@@ -13,8 +13,24 @@ This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to
 
 ## Implementation 
 
-I have trained the network using DDPG algorithm. 
-For Actor, I've used a three layer MLP with 128 and 128 neurons respectively in hidden layers. The state vector is the 33 dimensional vector. The output vector is of size 4. I've trained the network using Adam optimizer with an actor learning rate of 0.0002, critic learning rate of 0.0002 and batch size of 128 with a discount factor of 0.99.
+
+
+The network comprises of 2 networks:
+
+Actor: 256 -> 256
+Critic: 256 -> 256 -> 128
+
+Hyperparameters:
+
+replay buffer size = 1e6
+minibatch size = 128
+discount factor = 0.99
+tau for soft update of target parameters = 1e-3
+learning rate of the actor = 2e-4
+learning rate of the critic = 2e-4
+L2 weight decay = 0.0001
+
+I've trained the network using DDPG algorithm with the state vector of size 33 and the output vector is of size 4 using Adam optimizer.
 
 ## Results 
 
