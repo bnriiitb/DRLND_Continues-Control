@@ -9,7 +9,7 @@ This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to
 
 * A key feature of the approach is its simplicity: it requires only a straightforward actor-critic architecture and learning algorithm with very few “moving parts”, making it easy to implement and scale to more difficult problems and larger networks. 
 
-* DDPG can sometimes find policies that exceed the performance of the planner, in some cases even when learning from pixels (the planner always plans over the underlying low-dimensional state space).
+* DDPG can sometimes find policies that exceed the performance of the planner, in some cases even when learning from pixels.
 
 ## Implementation 
 
