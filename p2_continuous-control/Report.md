@@ -5,11 +5,20 @@ This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to
 [ddpg-paper]: https://arxiv.org/pdf/1509.02971.pdf
 [ddpg-repo]: https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/DDPG.ipynb
 
+* As finding the greedy policy requires an optimization of at at every timestep, we can't apply Q-learning to continuous action spaces and also this optimization is too slow to be practical with large, unconstrained function approximators and nontrivial action spaces.
+
 * Deep DPG (DDPG) is a model-free approach which can learn competitive policies for all of our tasks using low-dimensional observations. In many cases, we are also able to learn good policies directly from pixels
 
 * A key feature of the approach is its simplicity: it requires only a straightforward actor-critic architecture and learning algorithm with very few “moving parts”, making it easy to implement and scale to more difficult problems and larger networks. 
 
 * DDPG can sometimes find policies that exceed the performance of the planner, in some cases even when learning from pixels.
+
+* The DPG algorithm came to rescue us by maintaing a parameterized actor function which specifies the current policy by deterministically mapping states to a specific action. The critic is learned using the Bellman equation as in Q-learning. The actor is updated by following the applying the chain rule to the expected return from the start distribution J with respect to the actor parameters:
+
+![equation](equation.png)
+
+* A major challenge of learning in continuous action spaces is exploration. An advantage of offpolicies algorithms such as DDPG is that we can treat the problem of exploration independently from the learning algorithm. We constructed an exploration policy by adding noise sampled from a noise process N to our actor policy.
+
 
 ## Implementation 
 
